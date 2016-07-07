@@ -12,8 +12,7 @@
 * At least 3 levels of depth in inheritance
 
 ##### from optional #####
-
-* Static members (fields, properties, constructor, etc.)
+* Nothing yet
 
 ### Requirements NOT covered: ###
 
@@ -30,6 +29,7 @@
 
 ##### from optional #####
 
+* Static members (fields, properties, constructor, etc.)
 * generic types, indexers, operators overloading
 * Implementation of IEnumerable<T>, ICloneable, ToString() override
 * Namespaces (if your classes are too many)
