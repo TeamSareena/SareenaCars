@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SareenaCars.Collectables.Collectable" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABCAAAAAAAAgCAgAAAAAAAACEAAAAAAAAAAgAQAAAA=</HashCode>
+      <FileName>Collectables\Collectable.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SareenaCars.Constants.GlobalConstants" Collapsed="true">
+    <Position X="8.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Constants\GlobalConstants.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SareenaCars.Misc.Position" Collapsed="true">
+    <Position X="7" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAIABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Misc\Position.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SareenaCars.Obstacles.Obstacle" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAACAAAgAAgAAAAAAIAAAAAAAAAAAAAgAQAAAA=</HashCode>
+      <FileName>Obstacles\Obstacle.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SareenaCars.StateManager.GameWindow" Collapsed="true">
+    <Position X="7" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAIAAAACgAAADAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>StateManager\GameWindow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SareenaCars.Vehicles.Car" Collapsed="true">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Vehicles\Car.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SareenaCars.Vehicles.Truck" Collapsed="true">
+    <Position X="2.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Vehicles\Truck.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SareenaCars.Vehicles.Vehicle" Collapsed="true">
+    <Position X="1.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACCAAAQAAAgAggAAAgAAABAAAAAAAAAAAAgAQAAAA=</HashCode>
+      <FileName>Vehicles\Vehicle.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="SareenaCars.Contracts.ICollectable" Collapsed="true">
+    <Position X="5.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAACAAAAAAAAAACEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Contracts\ICollectable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SareenaCars.Contracts.IControllable" Collapsed="true">
+    <Position X="7" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Contracts\IControllable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SareenaCars.Contracts.IGameObject" Collapsed="true">
+    <Position X="8.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAgAAgAAAAAAAAAAAAAAAAAAAAgAQAAAA=</HashCode>
+      <FileName>Contracts\IGameObject.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SareenaCars.Contracts.IObstacle" Collapsed="true">
+    <Position X="5.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Contracts\IObstacle.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SareenaCars.Contracts.IVehicle" Collapsed="true">
+    <Position X="7" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAgAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Contracts\IVehicle.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="SareenaCars.Enumerations.StateType" Collapsed="true">
+    <Position X="5.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAgAAABAAAAQA=</HashCode>
+      <FileName>Enumerations\StateType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
