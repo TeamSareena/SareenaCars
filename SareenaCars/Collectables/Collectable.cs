@@ -79,6 +79,14 @@
             }
         }
 
+        public int Height
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+        }
+
         public int Id
         {
             get
@@ -126,6 +134,14 @@
             }
 
             set
+            {
+                throw new NotImplementedException();
+            }
+        }
+
+        public int Width
+        {
+            get
             {
                 throw new NotImplementedException();
             }

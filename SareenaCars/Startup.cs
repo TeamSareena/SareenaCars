@@ -12,9 +12,10 @@
     {
         static void Main(string[] args)
         {
-            Console.SetWindowSize(GlobalConstants.screenWidth, GlobalConstants.screenHeight);
+            Console.SetWindowPosition(0, 0);
+            Console.CursorVisible = false;
+            Console.OutputEncoding = Encoding.Unicode;
 
-            
             while (true)
             {
                 var key = Console.ReadKey();

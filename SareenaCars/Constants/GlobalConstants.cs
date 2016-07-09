@@ -8,7 +8,11 @@
 
     public class GlobalConstants
     {
-       public const int screenWidth = 126;
-       public const int screenHeight = 31;
+        //Window - based
+        public const int MainScreenWidth = 126;
+        public const int MainScreenHeight = 32;
+        public const int PlayScreenWidth = 57;
+        public const int PlayScreenHeight = 50;
+
     }
 }

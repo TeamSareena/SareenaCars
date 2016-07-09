@@ -1,28 +1,15 @@
 ﻿namespace SareenaCars.Misc
 {
 
-    public class Position
+    public struct Position
     {
-        private int xAxis;
-        private int yAxis;
-
-        public Position(int xAxis, int yAxis)
+ 
+        public Position(int x, int y)
         {
-            this.XAxis = xAxis;
-            this.YAxis = yAxis;
-        }    
-
-        public int XAxis
-        {
-            get { return xAxis; }
-            set { xAxis = value; }
+            this.XAxis = x;
+            this.YAxis = y;
         }
-
-        public int YAxis
-        {
-            get { return yAxis; }
-            set { yAxis = value; }
-        }
-
+        public int XAxis { get; set; }
+        public int YAxis { get; set; }
     }
 }
