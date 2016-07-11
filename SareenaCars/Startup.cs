@@ -16,7 +16,7 @@
             Console.CursorVisible = false;
             Console.OutputEncoding = Encoding.Unicode;
             Console.Title = ("Sareena Cars");
-            Console.ForegroundColor = ConsoleColor.DarkRed;
+            Console.ForegroundColor = ConsoleColor.Red;
 
             while (true)
             {

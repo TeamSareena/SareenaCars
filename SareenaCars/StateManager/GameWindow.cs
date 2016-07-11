@@ -16,6 +16,7 @@
 
         private GameWindow()
         {
+
         }
 
         public static GameWindow Instance {
