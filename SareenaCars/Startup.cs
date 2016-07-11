@@ -15,6 +15,8 @@
             Console.SetWindowPosition(0, 0);
             Console.CursorVisible = false;
             Console.OutputEncoding = Encoding.Unicode;
+            Console.Title = ("Sareena Cars");
+            Console.ForegroundColor = ConsoleColor.DarkRed;
 
             while (true)
             {
