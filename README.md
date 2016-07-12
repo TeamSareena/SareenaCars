@@ -3,36 +3,14 @@
 
 ### The gameplay ###
 
-### Requirements covered: ###
+This is an educational project for Telerik Academy built by Teem Sareena. This application runs under Windows and it is built with Visual Studio in C# version 6.0. It consists of a car that should be moving, avoiding obstacles and gaining bonuses. The obstacles can be trucks, holes, fences, motorcycles and so on. Bonuses can be extra lives, extra fuel and extra coins.
 
-##### from general #####
+### Team members ###
 
-* At least 5 interfaces (with one or more implementations)
-* At least 3 abstract classes (with inheritors)
-* At least 3 levels of depth in inheritance
-
-##### from optional #####
-* Nothing yet
-
-### Requirements NOT covered: ###
-
-##### from general #####
-
-* At least 15 classes (implementing the application logic)
-* At least 1 design pattern (Singleton for the random number generator)
-* At least 1 structure
-* At least 1 custom exception class
-* At least 1 polymorphism usage
-* At least 1 enumeration (we can enumerate the console colors)
-* At least 1 event
-* Provide a class diagram (to visualize all types)
-
-##### from optional #####
-
-* Static members (fields, properties, constructor, etc.)
-* generic types, indexers, operators overloading
-* Implementation of IEnumerable<T>, ICloneable, ToString() override
-* Namespaces (if your classes are too many)
-* User interface (UI) – console, graphical, web or mobile
-* Lambda expressions and LINQ (RemoveDisplayPiece)
-* Constants
+- Ivaylo Terziev
+- Todor Georgiev
+- Yovko Gospodinov
+- Stefan Dimitrov
+- Denitsa Kavalska
+- Branimir Kirilov
+- Kaloyan Iliev
