@@ -1,25 +1,26 @@
 ﻿namespace SareenaCars.Models.Vehicles
 {
     using System;
+    using System.Collections.Generic;
+    using System.Linq;
     using System.Text;
+    using System.Threading.Tasks;
+    using Contracts;
     using Misc;
     using Constants;
 
-    public class Hero : MovingObject, IHero
+    class Hero : MovingObject, IHero
     {
         private int lives;
-
         public Hero(int width, int height) : base(width, height)
         {
             this.Lives = ModelConstants.LivesDefault;
             this.Score = ModelConstants.MinScore;
             this.Position = new Position();
+            this.Fuel = new Fuel(ModelConstants.initialFuel, DateTime.Now);
         }
 
-        public Hero()
-            : this(ModelConstants.StartPositionX, ModelConstants.StartPositionY)
-        {
-        }
+        public Fuel Fuel { get; set; }
 
         public int Lives
         {
@@ -38,7 +39,18 @@
             }
         }
 
-        public int Score { get; set; }//validation
+        public int Score
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+
+            set
+            {
+                throw new NotImplementedException();
+            }
+        }
 
         public override void ChangePosition()
         {
@@ -107,22 +119,31 @@
             return true;
         }
 
-        
-
-        public override string Draw()
+        public bool IsAlive
         {
-            Console.SetCursorPosition(this.Position.XAxis, this.Position.YAxis);
-            return this.ToString();
+            get;
+            set;
+        }
+
+
+
+        public override void Draw()
+        {
+            throw new NotImplementedException();
         }
 
         public override string ToString()
         {
-            var sb = new StringBuilder();
-            sb.AppendFormat("  /-\\");
-            sb.AppendFormat("\n[|   |]");
-            sb.AppendFormat("\n |   |");
-            sb.AppendFormat("\n[|___|]");
             return base.ToString();
+        }
+
+        public bool CheckIsAlive()
+        {
+            if (this.lives == 0 || (this.Fuel.CurrentFuel == 0))
+            {
+                IsAlive = false;
+            }
+            return IsAlive;
         }
     }
 }
