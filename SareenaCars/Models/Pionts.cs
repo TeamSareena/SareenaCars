@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using SareenaCars.Models;
+using SareenaCars.Constants;
 using System.Threading.Tasks;
 
 namespace SareenaCars.Models
@@ -9,8 +11,9 @@ namespace SareenaCars.Models
     class Pionts : Models.Timer
     {
 
-        public int points;
-
+        protected int points = ModelConstants.initialPoints;
+        
+        
 
         protected override DateTime Finish
         {
@@ -21,7 +24,8 @@ namespace SareenaCars.Models
 
             set
             {
-                throw new NotImplementedException();
+                while (true) //The Car is moving
+                points +=1;
             }
         }
 

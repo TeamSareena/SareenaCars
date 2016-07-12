@@ -1,4 +1,5 @@
 ﻿using System;
+using SareenaCars.Constants;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,9 +9,12 @@ namespace SareenaCars.Models
 {
     class Fuel : Models.Timer
     {
-
-        public int initialFuel;
-
+        
+        protected int fuel
+        {
+            get { return this.fuel; }
+            set { this.fuel = ModelConstants.initialFuel; }
+        }
         protected override DateTime Finish
         {
             get
@@ -33,7 +37,10 @@ namespace SareenaCars.Models
 
             set
             {
-                throw new NotImplementedException();
+                while (true)   // The Car is moving
+                {
+                    fuel -= 1;
+                }
             }
         }
     }
