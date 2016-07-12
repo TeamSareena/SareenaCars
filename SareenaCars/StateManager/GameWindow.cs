@@ -7,17 +7,21 @@
     using System.Threading.Tasks;
     using Enumerations;
     using Constants;
-
+    using Models.Vehicles;
     public class GameWindow     
     {
+        //FIELDS
         private static GameWindow instance;
         private static StateType currentState = StateType.Main;
         private static object syncLock = new Object();
 
+        //CONSTRUCTOR
         private GameWindow()
         {
+            this.Hero = new Hero(ModelConstants.HeroWidth, ModelConstants.HeroHeight);
         }
 
+        //PROPERTIES
         public static GameWindow Instance {
             get
             {
@@ -34,36 +38,32 @@
                 return instance;
             }
         }
-
         private static StateType CurrentState{ get; set; }
+        public Hero Hero { get; set; }
 
+        //METHODS
         public static void ChangeState(ConsoleKeyInfo type)
         {
             switch (type.Key)
             {
                 case ConsoleKey.A:
                     currentState = StateType.Main;
-                    DrawState();
                     break;
                 case ConsoleKey.Enter:
                     currentState = StateType.Play;
-                    DrawState();
                     break;
                 case ConsoleKey.Spacebar:
                     currentState = StateType.HighScore;
-                    DrawState();
                     break;
                 case ConsoleKey.Escape:
                     currentState = StateType.Quit;
-                    DrawState();
                     break;
                 default:
                     //Exception???
-                    DrawState();
                     break;
             }
+            DrawState();
         }
-
         public static void DrawState()
         {
             var sb = new StringBuilder();
@@ -165,34 +165,34 @@
                     Console.Write(sb.ToString());
                     break;
                 case StateType.Quit:
-                    /*
- *            ___           ___           ___           ___     
-             /  /\         /  /\         /__/\         /  /\    
-            /  /:/_       /  /::\       |  |::\       /  /:/_   
-           /  /:/ /\     /  /:/\:\      |  |:|:\     /  /:/ /\  
-          /  /:/_/::\   /  /:/~/::\   __|__|:|\:\   /  /:/ /:/_ 
-         /__/:/__\/\:\ /__/:/ /:/\:\ /__/::::| \:\ /__/:/ /:/ /\
-         \  \:\ /~~/:/ \  \:\/:/__\/ \  \:\~~\__\/ \  \:\/:/ /:/
-          \  \:\  /:/   \  \::/       \  \:\        \  \::/ /:/ 
-           \  \:\/:/     \  \:\        \  \:\        \  \:\/:/  
-            \  \::/       \  \:\        \  \:\        \  \::/   
-             \__\/         \__\/         \__\/         \__\/    
-              ___                        ___           ___     
-             /  /\          ___         /  /\         /  /\    
-            /  /::\        /__/\       /  /:/_       /  /::\   
-           /  /:/\:\       \  \:\     /  /:/ /\     /  /:/\:\  
-          /  /:/  \:\       \  \:\   /  /:/ /:/_   /  /:/~/:/  
-         /__/:/ \__\:\  ___  \__\:\ /__/:/ /:/ /\ /__/:/ /:/___
-         \  \:\ /  /:/ /__/\ |  |:| \  \:\/:/ /:/ \  \:\/:::::/
-          \  \:\  /:/  \  \:\|  |:|  \  \::/ /:/   \  \::/~~~~ 
-           \  \:\/:/    \  \:\__|:|   \  \:\/:/     \  \:\     
-            \  \::/      \__\::::/     \  \::/       \  \:\    
-             \__\/           ~~~~       \__\/         \__\/    
-
-                    Thanks For Playing!!!
- */
-
+                    Console.SetWindowSize(GlobalConstants.QuitScreenWidth, GlobalConstants.QuitScreenHeight);
+                    Console.SetBufferSize(GlobalConstants.QuitScreenWidth, GlobalConstants.QuitScreenHeight);
+                    sb.AppendFormat("      ___           ___           ___           ___");
+                    sb.AppendFormat("\n     /  /\\         /  /\\         /__/\\         /  /\\ ");
+                    sb.AppendFormat("\n    /  /:/_       /  /::\\       |  |::\\       /  /:/_   ");
+                    sb.AppendFormat("\n   /  /:/ /\\     /  /:/\\:\\      |  |:|:\\     /  /:/ /\\");
+                    sb.AppendFormat("\n  /  /:/_/::\\   /  /:/~/::\\   __|__|:|\\:\\   /  /:/ /:/");
+                    sb.AppendFormat("\n /__/:/__\\/\\:\\ /__/:/ /:/\\:\\ /__/::::| \\:\\ /__/:/ /:/ /\\");
+                    sb.AppendFormat("\n \\  \\:\\ /~~/:/ \\  \\:\\/:/__\\/ \\  \\:\\~~\\__\\/ \\  \\:\\/:/ /:/");
+                    sb.AppendFormat("\n  \\  \\:\\  /:/   \\  \\::/       \\  \\:\\        \\  \\::/ /:/");
+                    sb.AppendFormat("\n   \\  \\:\\/:/     \\  \\:\\        \\  \\:\\        \\  \\:\\/:/");
+                    sb.AppendFormat("\n    \\  \\::/       \\  \\:\\        \\  \\:\\        \\  \\::/");
+                    sb.AppendFormat("\n     \\__\\/         \\__\\/         \\__\\/         \\__\\/");
+                    sb.AppendFormat("\n\n                     Thanks For Playing!!!\n");
+                    sb.AppendFormat("\n       ___                        ___           ___");
+                    sb.AppendFormat("\n      /  /\\          ___         /  /\\         /  /\\");
+                    sb.AppendFormat("\n     /  /::\\        /__/\\       /  /:/_       /  /::\\");
+                    sb.AppendFormat("\n    /  /:/\\:\\       \\  \\:\\     /  /:/ /\\     /  /:/\\:\\");
+                    sb.AppendFormat("\n   /  /:/  \\:\\       \\  \\:\\   /  /:/ /:/_   /  /:/~/:/");
+                    sb.AppendFormat("\n  /__/:/ \\__\\:\\  ___  \\__\\:\\ /__/:/ /:/ /\\ /__/:/ /:/___");
+                    sb.AppendFormat("\n  \\  \\:\\ /  /:/ /__/\\ |  |:| \\  \\:\\/:/ /:/ \\  \\:\\/:::::/");
+                    sb.AppendFormat("\n   \\  \\:\\  /:/  \\  \\:\\|  |:|  \\  \\::/ /:/   \\  \\::/~~~~");
+                    sb.AppendFormat("\n    \\  \\:\\/:/    \\  \\:\\__|:|   \\  \\:\\/:/     \\  \\:\\");
+                    sb.AppendFormat("\n     \\  \\::/      \\__\\::::/     \\  \\::/       \\  \\:\\");
+                    sb.AppendFormat("\n      \\__\\/           ~~~~       \\__\\/         \\__\\/");
                     Console.WriteLine(sb.ToString());
+                    Console.ReadKey();
+                    Environment.Exit(0);
                     break;
                 default:
                     //Again possible place for exception

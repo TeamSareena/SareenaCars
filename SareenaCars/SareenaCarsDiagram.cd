@@ -51,28 +51,28 @@
       <FileName>Models\Vehicles\Truck.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="SareenaCars.LifeBonus">
+  <Class Name="SareenaCars.LifeBonus" Collapsed="true">
     <Position X="4.25" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAIAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\LifeBonus.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="SareenaCars.CoinBonus">
-    <Position X="2.5" Y="2.75" Width="1.5" />
+  <Class Name="SareenaCars.CoinBonus" Collapsed="true">
+    <Position X="2.5" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAIAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\CoinBonus.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="SareenaCars.HoleObstacle">
+  <Class Name="SareenaCars.HoleObstacle" Collapsed="true">
     <Position X="2.5" Y="4" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAIAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\HoleObstacle.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="SareenaCars.FenceObstacle">
+  <Class Name="SareenaCars.FenceObstacle" Collapsed="true">
     <Position X="4.25" Y="4.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAIAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>

@@ -13,6 +13,8 @@
         public const int MainScreenHeight = 32;
         public const int PlayScreenWidth = 57;
         public const int PlayScreenHeight = 50;
+        public const int QuitScreenWidth = 57;
+        public const int QuitScreenHeight = 27;
 
     }
 }

@@ -5,9 +5,9 @@ using System.Text;
 
 namespace SareenaCars
 {
-    public class Truck : Enemy
+    public class TruckObstacle : Item
     {
-        public Truck(int width, int height) : base(width, height)
+        public TruckObstacle(int width, int height) : base(width, height)
         {
         }
 
