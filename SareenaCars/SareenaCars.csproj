@@ -44,30 +44,30 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Constants\ModelConstants.cs" />
+    <Compile Include="Contracts\IBorder.cs" />
     <Compile Include="Contracts\IHero.cs" />
-    <Compile Include="Models\CoinBonus.cs" />
-    <Compile Include="Collectables\Collectable.cs" />
+    <Compile Include="Contracts\IItem.cs" />
+    <Compile Include="Enumerations\ItemType.cs" />
+    <Compile Include="Models\Border.cs" />
+    <Compile Include="Models\Items\Bonuses\Bonus.cs" />
+    <Compile Include="Models\Items\Bonuses\CoinBonus.cs" />
     <Compile Include="Constants\GlobalConstants.cs" />
-    <Compile Include="Contracts\ICollectable.cs" />
-    <Compile Include="Contracts\IControllable.cs" />
     <Compile Include="Contracts\IDrawable.cs" />
     <Compile Include="Contracts\IGameObject.cs" />
     <Compile Include="Contracts\IMoveable.cs" />
-    <Compile Include="Contracts\IObstacle.cs" />
-    <Compile Include="Contracts\IVehicle.cs" />
-    <Compile Include="Models\FenceObstacle.cs" />
-    <Compile Include="Models\HoleObstacle.cs" />
-    <Compile Include="Models\LifeBonus.cs" />
-    <Compile Include="Models\Vehicles\Enemy.cs" />
+    <Compile Include="Models\Items\Obstacles\Obstacle.cs" />
+    <Compile Include="Models\Items\Obstacles\FenceObstacle.cs" />
+    <Compile Include="Models\Items\Obstacles\HoleObstacle.cs" />
+    <Compile Include="Models\Items\Bonuses\LifeBonus.cs" />
     <Compile Include="Enumerations\StateType.cs" />
-    <Compile Include="Models\Item.cs" />
+    <Compile Include="Models\Items\Item.cs" />
     <Compile Include="Misc\Position.cs" />
     <Compile Include="Models\MovingObject.cs" />
     <Compile Include="Models\Vehicles\Hero.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StateManager\GameWindow.cs" />
-    <Compile Include="Models\Vehicles\Truck.cs" />
+    <Compile Include="Models\Items\Obstacles\TruckObstacle.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

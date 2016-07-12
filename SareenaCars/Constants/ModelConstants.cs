@@ -13,5 +13,7 @@
         public const int HeroHeight = 4;
         public const int MinScore = 0;
         public const int LivesDefault = 3;
+        public const int StartPositionX = 20;
+        public const int StartPositionY = 20;
     }
 }

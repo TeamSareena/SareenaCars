@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SareenaCars.Contracts
 {
-    interface IItem
+    public interface IItem
     {
     }
 }

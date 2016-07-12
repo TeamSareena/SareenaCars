@@ -1,12 +1,11 @@
-﻿using System;
+﻿using SareenaCars.Models.Vehicles;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SareenaCars.Contracts
 {
-    interface IBorder
+    public interface IBorder
     {
+        Hero Hero { get; }
+        ICollection<IItem> Items {get;}
     }
 }

@@ -1,6 +1,5 @@
 ﻿namespace SareenaCars.Misc
 {
-
     public struct Position
     {
  

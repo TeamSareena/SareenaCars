@@ -50,6 +50,6 @@
 
         public abstract void ChangePosition();
 
-        public abstract void Draw();
+        public abstract string Draw();
     }
 }

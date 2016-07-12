@@ -1,11 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace SareenaCars
+﻿namespace SareenaCars.Models.Items.Obstacles
 {
-    public class HoleObstacle : Item
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+
+    public class HoleObstacle : Obstacle
     {
         public HoleObstacle(int width, int height) : base(width, height)
         {
@@ -16,7 +16,7 @@ namespace SareenaCars
             throw new NotImplementedException();
         }
 
-        public override void Draw()
+        public override string Draw()
         {
             throw new NotImplementedException();
         }
