@@ -8,7 +8,10 @@ namespace SareenaCars.Models
 {
     class Fuel : Models.Timer
     {
-        public override DateTime Finish
+
+        public int initialFuel;
+
+        protected override DateTime Finish
         {
             get
             {
@@ -21,7 +24,7 @@ namespace SareenaCars.Models
             }
         }
 
-        public override DateTime Start
+        protected override DateTime Start
         {
             get
             {

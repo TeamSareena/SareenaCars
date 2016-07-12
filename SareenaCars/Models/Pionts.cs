@@ -8,7 +8,11 @@ namespace SareenaCars.Models
 {
     class Pionts : Models.Timer
     {
-        public override DateTime Finish
+
+        public int points;
+
+
+        protected override DateTime Finish
         {
             get
             {
@@ -21,7 +25,7 @@ namespace SareenaCars.Models
             }
         }
 
-        public override DateTime Start
+        protected override DateTime Start
         {
             get
             {

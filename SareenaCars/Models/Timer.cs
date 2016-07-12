@@ -9,7 +9,33 @@ namespace SareenaCars.Models
 {
     public abstract class Timer : ITimer
     {
-        public abstract DateTime Finish { get; set; }
-        public abstract DateTime Start { get; set; }
+        protected abstract DateTime Finish { get; set; }
+        protected abstract DateTime Start { get; set; }
+
+        DateTime ITimer.Finish
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+
+            set
+            {
+                throw new NotImplementedException();
+            }
+        }
+
+        DateTime ITimer.Start
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+
+            set
+            {
+                throw new NotImplementedException();
+            }
+        }
     }
 }
