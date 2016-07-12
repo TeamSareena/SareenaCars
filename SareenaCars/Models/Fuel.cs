@@ -9,39 +9,27 @@ namespace SareenaCars.Models
 {
     class Fuel : Models.Timer
     {
-        
-        protected int fuel
-        {
-            get { return this.fuel; }
-            set { this.fuel = ModelConstants.initialFuel; }
-        }
-        protected override DateTime Finish
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
+        private int currentFuel;
 
-            set
-            {
-                throw new NotImplementedException();
-            }
+        public Fuel(int currentFuel, DateTime start)
+        {
+            this.CurrentFuel = currentFuel;
+            this.Start = start;
         }
 
-        protected override DateTime Start
+        public  int CurrentFuel
         {
-            get
-            {
-                throw new NotImplementedException();
-            }
+            get { return this.currentFuel; }
+            set { this.currentFuel = ModelConstants.initialFuel; }
+        }
+        protected  DateTime Finish
+        {
+            get; set;
+        }
 
-            set
-            {
-                while (true)   // The Car is moving
-                {
-                    fuel -= 1;
-                }
-            }
+        protected  DateTime Start
+        {
+            get; set;
         }
     }
 }
